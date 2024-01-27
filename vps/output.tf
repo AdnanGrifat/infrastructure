@@ -1,3 +1,11 @@
-output id {
-    value = aws_instance.web.id
+output vpc_id {
+  value = module.vpc_id
+}
+
+output public_subnet {
+value = module.vpc.public_subnets
+}
+
+output private_subnets {
+value = module.vpc.private_subnets
 }
